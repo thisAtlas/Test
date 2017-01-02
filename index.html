@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Beregninger</title>
+		<script type="text/javascript" src="calcs.js"></script>
+	</head>
+	<body onload="convert()">
+		<div>
+			<h2>Header.</h2>
+			<form id='form' name='calc'>
+				Calculator:<br>
+				<input type="text" name="tal1">
+				<br><br>
+				<input type="text" name="tal2">
+				<br><br>
+				<button type="button" onclick="Sum()">+</button>
+				<button type="button" onclick="Sub()">-</button>
+				<button type="button" onclick="Mul()">*</button>
+				<button type="button" onclick="Div()">/</button>
+				<br><br>
+				<input type="text" name="output"><br>
+			</form>
+			<form id='boxform' name='box'>
+				<h3>Box:</h3>
+				Height:<input type="text" name="height">
+				<br><br>
+				Width:<input type="text" name="width">
+				<br><br>
+				Length:<input type="text" name="length">
+				<br><br>
+				<button type="button" onclick="SurfaceArea()">Calculate Surface Area</button>
+				<input type="text" name="SurfAOut">
+				<br><br>
+				<button type="button" onclick="Volume()">Calculate Volume</button>
+				<input type="text" name="VolOut">
+				<br><br>
+			</form>
+		</div>
+	</body>
+</html>
